@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form action="./submitted.html" method="post">
+
+    <!-- <a href="./Account Details.html"><h2 style="background-color:lightgreen">Step 1: Account</h2></a>
+   <a href="./Personal Details.html"> <h2 style="background-color:lightgreen"> Step 2: Personal Details</h2></a>
+    <a href="./Your review.html"><h2 style="background-color:dodgerblue">Step 3: Your Review</h2></a> -->
+
+    <table  cellpadding="9" style="border-collapse: collapse;">
+        <tr>
+         <th style="background-color: lightgreen;"> <a href="./Account Details.html"> &nbsp; Step 1: Account&nbsp; </a></th>
+        <th  style="background-color: lightgreen;">  <a href="./Personal Details.html"> &nbsp; Step 2: Personal Details &nbsp;</a> </th>
+        <th style="background-color:dodgerblue"> <a href="./Your review.html">&nbsp;Step 3: Your Review </a></th>
+        </tr>
+     </table>
+
+     <br> <br>
+
+    <fieldset>
+
+        <br>
+
+        <legend>Your Review:</legend>
+
+
+        <label>How do you hear about us?
+            <select name="How do you hear about us?" id="How do you hear about us?" required> 
+                <option value="select your option">Select you option</option>
+                <option value="Unversity">University</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="TV Ads">TV Ads</option>
+                <option value="By Friends">By Friends</option>
+            </select>
+        </label>
+
+        <br> <br>
+
+        <label> Would you visit Again? <br>
+            <input type="radio" name="visit" id="Would you visit Again?" value="Yes">Yes
+            <input type="radio" name="visit" id="Would you visit Again?" value="No">No
+            <input type="radio" name="visit" id="Would you visit Again?" value="Maybe">Maybe
+        </label>
+
+        <br> <br>
+
+        <label>Comments: <br>
+        <textarea name="comments" id="Comments" cols="30" rows="5" placeholder="Enter your comments here...."></textarea>
+        </label>
+
+        <br> <br>
+
+        <label>Documents: <br>
+        <input type="file" name="doc" id="Documents" required>
+        </label>
+
+        <br> <br>
+
+        <input type="checkbox" checked name="sign me up email updates" value="sign me up email updates" required>Sign me up email updates
+
+        <br> <br>
+
+        <a href="./Personal Details.html"> <img src="./Image/back.png" alt="start" height="40px" width="110px">  </a>
+
+       <input type="image" src="./Image/submit.png" alt="next"  height="40px" width="110px">
+
+    </fieldset>
+    
+</form>
+
+</body>
+</html>
